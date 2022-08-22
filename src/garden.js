@@ -89,7 +89,7 @@ handPoses.addEventListener('pose', function ({detail}) {
 (async function () {
 
     // Forest from Google Poly, https://poly.google.com/view/2_fv3tn3NG_
-    const {scene: gltfScene} = await new Promise(resolve => loader.load('./assets/forest.glb', resolve));
+    const {scene: gltfScene} = await new Promise(resolve => loader.load('./assets/forest2.glb', resolve));
     const trees = gltfScene.children[0];
     trees.position.z = -5;
     trees.position.y = 2.5;
